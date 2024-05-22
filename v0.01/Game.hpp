@@ -1,6 +1,6 @@
 #include <iostream>
-#include <fstream>
-#include <cmath>
+#include <fstream> // biblioteca para manipulacao de arquivos
+#include <cmath>   // biblioteca para auxilio na geracao do numero aleatorio
 #include <vector>
 
 class Game {
@@ -12,8 +12,8 @@ class Game {
 		bool win = false, letter_exist = false;
 
 	public:
-		std::string random_word (void);
-		void display_game(void);
-		void end_game(void);
-		void wrong_answers(void);
+		std::string random_word (void); // funcao para gerar uma palavra aleatoria
+		void display_game(void);        // principal funcao para exibicao do jogo
+		void end_game(void);            // funcao de finzalicao do jogo
+		void wrong_answers(void);       // funcao para guardar as palavras erradas
 };
