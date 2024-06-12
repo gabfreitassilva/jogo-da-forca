@@ -12,6 +12,10 @@ int main() {
     std::cout << "Deseja jogar novamente? (S ou N): ";
     std::cin >> escolhaUsuario;
     if (toupper(escolhaUsuario) != 'N') { goto INICIO; } // condicao de retorno para jogar novamente
+    
+    std::cout << "O jogo acabou! Tecle 'q' para sair\n";
+    std::cin >> escolhaUsuario;
+    if (toupper(escolhaUsuario) == 'q') { return 0; }
 
 	return 0;
 }

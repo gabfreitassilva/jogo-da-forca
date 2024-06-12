@@ -1,4 +1,4 @@
-#include "game.hpp"
+#include "Game.hpp"
 
 std::string Game::random_word(void) {
 	std::ifstream read;
